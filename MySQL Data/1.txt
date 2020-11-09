@@ -1,0 +1,93 @@
+show databases;
+use dac_demo;
+show tables;
+
+select * from salespeople;
+
+create table USER
+(
+userID int (4),
+userName VARCHAR (10),
+userPass int (10) ,
+primary key (userID)
+);
+
+show tables;
+
+create table Expense
+(
+expenseID int (4),
+itemName VARCHAR (10),
+price FLOAT (10),
+purchaseDate Date,
+userID int (4)
+);
+
+select * from user;
+
+show databases;
+use dac_demo;
+show tables;
+
+create table Student
+(
+rno int (4),
+studentName VARCHAR (10),
+fee float (15)
+);
+
+show tables;
+
+select * from student;
+
+show tables;
+use dac_demo;
+
+create table employee
+(
+emp_id int (4),
+emp_name VARCHAR (20),
+basic_salary float (15),
+dept VARCHAR (20),
+join_date Date
+);
+
+insert into employee (emp_name, basic_salary, dept, join_date, emp_id) 
+values (?, ?, ?, ?, ?);
+
+select * from employee;
+show tables;
+
+use dac_demo;
+
+create table employee1
+(
+emp_id int (4),
+emp_name VARCHAR (20),
+basic_salary float (15),
+dept VARCHAR (20),
+join_date Date
+);
+
+show tables;
+
+insert into employee1 (emp_name, basic_salary, dept, join_date, emp_id) 
+values (?, ?, ?, ?, ?);
+
+show databases;
+use dac_demo;
+show tables;
+
+select * from category;
+select * from item;
+
+show tables;
+
+select * from emp_inh1;
+select * from clr_inh1;
+select * from mgr_inh1;
+
+
+
+
+ 
